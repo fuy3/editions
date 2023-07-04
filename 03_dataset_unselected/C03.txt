@@ -1,0 +1,1109 @@
+[2023/07/04 12:09:42] ppocr DEBUG: Namespace(help='==SUPPRESS==', use_gpu=False, use_xpu=False, use_npu=False, ir_optim=True, use_tensorrt=False, min_subgraph_size=15, precision='fp32', gpu_mem=500, image_dir='data/0010000000/', page_num=0, det_algorithm='DB', det_model_dir='/Users/yimingfu/.paddleocr/whl/det/ch/ch_PP-OCRv3_det_infer', det_limit_side_len=960, det_limit_type='max', det_box_type='quad', det_db_thresh=0.3, det_db_box_thresh=0.6, det_db_unclip_ratio=1.5, max_batch_size=10, use_dilation=False, det_db_score_mode='fast', det_east_score_thresh=0.8, det_east_cover_thresh=0.1, det_east_nms_thresh=0.2, det_sast_score_thresh=0.5, det_sast_nms_thresh=0.2, det_pse_thresh=0, det_pse_box_thresh=0.85, det_pse_min_area=16, det_pse_scale=1, scales=[8, 16, 32], alpha=1.0, beta=1.0, fourier_degree=5, rec_algorithm='SVTR_LCNet', rec_model_dir='/Users/yimingfu/.paddleocr/whl/rec/ch/ch_PP-OCRv3_rec_infer', rec_image_inverse=True, rec_image_shape='3, 48, 320', rec_batch_num=6, max_text_length=25, rec_char_dict_path='/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/paddleocr/ppocr/utils/ppocr_keys_v1.txt', use_space_char=True, vis_font_path='./doc/fonts/simfang.ttf', drop_score=0.5, e2e_algorithm='PGNet', e2e_model_dir=None, e2e_limit_side_len=768, e2e_limit_type='max', e2e_pgnet_score_thresh=0.5, e2e_char_dict_path='./ppocr/utils/ic15_dict.txt', e2e_pgnet_valid_set='totaltext', e2e_pgnet_mode='fast', use_angle_cls=False, cls_model_dir='/Users/yimingfu/.paddleocr/whl/cls/ch_ppocr_mobile_v2.0_cls_infer', cls_image_shape='3, 48, 192', label_list=['0', '180'], cls_batch_num=6, cls_thresh=0.9, enable_mkldnn=False, cpu_threads=10, use_pdserving=False, warmup=False, sr_model_dir=None, sr_image_shape='3, 32, 128', sr_batch_num=1, draw_img_save_dir='../inference_results_db', save_crop_res=False, crop_res_save_dir='./output', use_mp=False, total_process_num=1, process_id=0, benchmark=False, save_log_path='./log_output/', show_log=True, use_onnx=False, output='./output', table_max_len=488, table_algorithm='TableAttn', table_model_dir=None, merge_no_span_structure=True, table_char_dict_path=None, layout_model_dir=None, layout_dict_path=None, layout_score_threshold=0.5, layout_nms_threshold=0.5, kie_algorithm='LayoutXLM', ser_model_dir=None, re_model_dir=None, use_visual_backbone=True, ser_dict_path='../train_data/XFUND/class_list_xfun.txt', ocr_order_method=None, mode='structure', image_orientation=False, layout=True, table=True, ocr=True, recovery=False, use_pdf2docx_api=False, lang='ch', det=True, rec=True, type='ocr', ocr_version='PP-OCRv3', structure_version='PP-StructureV2')
+[2023/07/04 12:09:42] ppocr INFO: **********data/0010000000/_001.png**********
+[2023/07/04 12:09:42] ppocr DEBUG: dt_boxes num : 0, elapse : 0.009023189544677734
+[2023/07/04 12:09:42] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:42] ppocr INFO: **********data/0010000000/_002.png**********
+[2023/07/04 12:09:42] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006710052490234375
+[2023/07/04 12:09:42] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:42] ppocr INFO: **********data/0010000000/_003.png**********
+[2023/07/04 12:09:42] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006520986557006836
+[2023/07/04 12:09:42] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:42] ppocr INFO: **********data/0010000000/_004.png**********
+[2023/07/04 12:09:42] ppocr DEBUG: dt_boxes num : 1, elapse : 0.007314920425415039
+[2023/07/04 12:09:42] ppocr DEBUG: rec_res num  : 1, elapse : 0.11301612854003906
+[2023/07/04 12:09:42] ppocr INFO: **********data/0010000000/_005.png**********
+[2023/07/04 12:09:42] ppocr DEBUG: dt_boxes num : 0, elapse : 0.014276981353759766
+[2023/07/04 12:09:42] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:42] ppocr INFO: **********data/0010000000/_006.png**********
+[2023/07/04 12:09:42] ppocr DEBUG: dt_boxes num : 0, elapse : 0.010607242584228516
+[2023/07/04 12:09:42] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:42] ppocr INFO: **********data/0010000000/_007.png**********
+[2023/07/04 12:09:42] ppocr DEBUG: dt_boxes num : 0, elapse : 0.04572582244873047
+[2023/07/04 12:09:42] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:42] ppocr INFO: **********data/0010000000/_008.png**********
+[2023/07/04 12:09:42] ppocr DEBUG: dt_boxes num : 1, elapse : 0.014636039733886719
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 1, elapse : 0.08728718757629395
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_009.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005255937576293945
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_010.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006341218948364258
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_011.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 1, elapse : 0.008491992950439453
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 1, elapse : 0.06674408912658691
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_012.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0063130855560302734
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_013.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 1, elapse : 0.007895946502685547
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 1, elapse : 0.06704902648925781
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_014.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004840850830078125
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 2.1457672119140625e-06
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_015.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00655817985534668
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_016.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006262063980102539
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_017.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006999015808105469
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_018.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004974842071533203
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_019.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005259990692138672
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_020.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008033990859985352
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_021.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006226062774658203
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_022.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00669407844543457
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_023.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 1, elapse : 0.010369062423706055
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 1, elapse : 0.0671849250793457
+[2023/07/04 12:09:43] ppocr INFO: [[[18.0, 5.0], [73.0, 5.0], [73.0, 73.0], [18.0, 73.0]], ('婆', 0.9767444133758545)]
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_024.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 1, elapse : 0.006878852844238281
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 1, elapse : 0.06844186782836914
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_025.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006720066070556641
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_026.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0069849491119384766
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_027.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 1, elapse : 0.007145881652832031
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 1, elapse : 0.06744503974914551
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_028.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006724834442138672
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_029.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 1, elapse : 0.008082151412963867
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 1, elapse : 0.06662487983703613
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_030.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007783174514770508
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_031.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005526065826416016
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_032.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 1, elapse : 0.00722813606262207
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 1, elapse : 0.06767487525939941
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_033.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006471157073974609
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_034.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 1, elapse : 0.007147073745727539
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 1, elapse : 0.06650114059448242
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_035.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006566762924194336
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_036.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.009107828140258789
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_037.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006046772003173828
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 1.9073486328125e-06
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_038.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005017995834350586
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_039.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0065991878509521484
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_040.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0067327022552490234
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 1.9073486328125e-06
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_041.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006463050842285156
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_042.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 1, elapse : 0.008252859115600586
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 1, elapse : 0.07306170463562012
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_043.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006616115570068359
+[2023/07/04 12:09:43] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:43] ppocr INFO: **********data/0010000000/_044.png**********
+[2023/07/04 12:09:43] ppocr DEBUG: dt_boxes num : 1, elapse : 0.009769201278686523
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 1, elapse : 0.06753110885620117
+[2023/07/04 12:09:44] ppocr INFO: [[[9.0, 9.0], [68.0, 4.0], [74.0, 73.0], [15.0, 78.0]], ('者', 0.9911223649978638)]
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_045.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006674289703369141
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_046.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006248950958251953
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_047.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007769107818603516
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_048.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006389141082763672
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_049.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 1, elapse : 0.0071179866790771484
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 1, elapse : 0.06732010841369629
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_050.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 1, elapse : 0.006762981414794922
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 1, elapse : 0.06688785552978516
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_051.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0055387020111083984
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_052.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006718873977661133
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_053.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00884389877319336
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_054.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 1, elapse : 0.008575916290283203
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 1, elapse : 0.06851911544799805
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_055.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006562232971191406
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_056.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006259918212890625
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_057.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006348848342895508
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_058.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0065310001373291016
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_059.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006513833999633789
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_060.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006684064865112305
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_061.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007616996765136719
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_062.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006369829177856445
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_063.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006298065185546875
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_064.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0064640045166015625
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_065.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008067131042480469
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_066.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 1, elapse : 0.010376930236816406
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 1, elapse : 0.07179379463195801
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_067.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006491899490356445
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_068.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007550954818725586
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_069.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005001068115234375
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_070.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006445884704589844
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_071.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00793313980102539
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_072.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00864410400390625
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_073.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 1, elapse : 0.008372068405151367
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 1, elapse : 0.06863784790039062
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_074.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006247997283935547
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_075.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 1, elapse : 0.007276773452758789
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 1, elapse : 0.06687211990356445
+[2023/07/04 12:09:44] ppocr INFO: [[[0.0, 0.0], [58.0, 0.0], [58.0, 67.0], [0.0, 67.0]], ('琪', 0.7760207653045654)]
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_076.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006541013717651367
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_077.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007735013961791992
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_078.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007782936096191406
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_079.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 1, elapse : 0.006905078887939453
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 1, elapse : 0.0661778450012207
+[2023/07/04 12:09:44] ppocr INFO: [[[13.0, 10.0], [62.0, 5.0], [65.0, 35.0], [16.0, 40.0]], ('E', 0.7783213257789612)]
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_080.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006619930267333984
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_081.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008147954940795898
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_082.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0077130794525146484
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 2.1457672119140625e-06
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_083.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006558418273925781
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_084.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006516933441162109
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_085.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 1, elapse : 0.007138967514038086
+[2023/07/04 12:09:44] ppocr DEBUG: rec_res num  : 1, elapse : 0.06731414794921875
+[2023/07/04 12:09:44] ppocr INFO: [[[12.0, 3.0], [59.0, 3.0], [59.0, 50.0], [12.0, 50.0]], ('身', 0.944742739200592)]
+[2023/07/04 12:09:44] ppocr INFO: **********data/0010000000/_086.png**********
+[2023/07/04 12:09:44] ppocr DEBUG: dt_boxes num : 1, elapse : 0.007147073745727539
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 1, elapse : 0.0675210952758789
+[2023/07/04 12:09:45] ppocr INFO: [[[0.0, 0.0], [56.0, 0.0], [56.0, 57.0], [0.0, 57.0]], ('重', 0.5435612797737122)]
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_087.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006963014602661133
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_088.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0073642730712890625
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_089.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 1, elapse : 0.008607149124145508
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 1, elapse : 0.0697488784790039
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_090.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 1, elapse : 0.007184267044067383
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 1, elapse : 0.06618309020996094
+[2023/07/04 12:09:45] ppocr INFO: [[[0.0, 0.0], [57.0, 0.0], [60.0, 69.0], [0.0, 72.0]], ('现', 0.5789615511894226)]
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_091.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0070340633392333984
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_092.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007489681243896484
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_093.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007323026657104492
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.6689300537109375e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_094.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.010091066360473633
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_095.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007609844207763672
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_096.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005960941314697266
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_097.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008266925811767578
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_098.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006899118423461914
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_099.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0064280033111572266
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_100.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006277799606323242
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_101.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 1, elapse : 0.006018877029418945
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 1, elapse : 0.06680488586425781
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_102.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005223989486694336
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_103.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008118152618408203
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_104.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006400108337402344
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_105.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0069599151611328125
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_106.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006793975830078125
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_107.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007063865661621094
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.9073486328125e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_108.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0069468021392822266
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_109.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.009295940399169922
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_110.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008982181549072266
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_111.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 1, elapse : 0.009287834167480469
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 1, elapse : 0.0754702091217041
+[2023/07/04 12:09:45] ppocr INFO: [[[14.0, 10.0], [59.0, 10.0], [59.0, 45.0], [14.0, 45.0]], ('天', 0.5296474099159241)]
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_112.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005316972732543945
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_113.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007061004638671875
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_114.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00657200813293457
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_115.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007648944854736328
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_116.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00742793083190918
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_117.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006303071975708008
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_118.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006180286407470703
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_119.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0067751407623291016
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 2.1457672119140625e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_120.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006328105926513672
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_121.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0063211917877197266
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_122.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0062410831451416016
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_123.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005399227142333984
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_124.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007478952407836914
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_125.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006502866744995117
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_126.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0080108642578125
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_127.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005343914031982422
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_128.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00661921501159668
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_129.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0066831111907958984
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_130.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007784843444824219
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_131.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005227088928222656
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_132.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006279945373535156
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_133.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006203889846801758
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_134.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006258964538574219
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_135.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006930112838745117
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_136.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008217096328735352
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_137.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0064280033111572266
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 2.1457672119140625e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_138.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004609107971191406
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_139.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006211042404174805
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_140.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006838083267211914
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_141.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005371809005737305
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_142.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0065441131591796875
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_143.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006537914276123047
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_144.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007707834243774414
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_145.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005163908004760742
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_146.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007822036743164062
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_147.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 1, elapse : 0.006994009017944336
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 1, elapse : 0.06777119636535645
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_148.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 1, elapse : 0.006805896759033203
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 1, elapse : 0.06963801383972168
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_149.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0063288211822509766
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_150.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006469249725341797
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_151.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006680011749267578
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_152.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005148887634277344
+[2023/07/04 12:09:45] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:45] ppocr INFO: **********data/0010000000/_153.png**********
+[2023/07/04 12:09:45] ppocr DEBUG: dt_boxes num : 1, elapse : 0.009538888931274414
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 1, elapse : 0.07165908813476562
+[2023/07/04 12:09:46] ppocr INFO: [[[7.0, 0.0], [79.0, 0.0], [79.0, 83.0], [7.0, 83.0]], ('廳', 0.6675117611885071)]
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_154.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 1, elapse : 0.0067291259765625
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 1, elapse : 0.06720280647277832
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_155.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0073070526123046875
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_156.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004725933074951172
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_157.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004693031311035156
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_158.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004975080490112305
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_159.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004893064498901367
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_160.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0068531036376953125
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_161.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004712104797363281
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_162.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006426095962524414
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_163.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007647991180419922
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_164.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00619196891784668
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_165.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006773948669433594
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_166.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 1, elapse : 0.006872892379760742
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 1, elapse : 0.06787490844726562
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_167.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005619049072265625
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_168.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006638288497924805
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_169.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006467103958129883
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_170.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 1, elapse : 0.007699012756347656
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 1, elapse : 0.06707501411437988
+[2023/07/04 12:09:46] ppocr INFO: [[[10.0, 4.0], [60.0, 0.0], [63.0, 58.0], [12.0, 62.0]], ('天', 0.9597006440162659)]
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_171.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00650787353515625
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_172.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005529880523681641
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 2.1457672119140625e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_173.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 1, elapse : 0.007603883743286133
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 1, elapse : 0.06691932678222656
+[2023/07/04 12:09:46] ppocr INFO: [[[0.0, 0.0], [65.0, 0.0], [65.0, 76.0], [0.0, 76.0]], ('现', 0.680057168006897)]
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_174.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006537914276123047
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_175.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 1, elapse : 0.008175849914550781
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 1, elapse : 0.06760501861572266
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_176.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007686138153076172
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_177.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0073719024658203125
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_178.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007721900939941406
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_179.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 1, elapse : 0.008140087127685547
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 1, elapse : 0.06733894348144531
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_180.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0062410831451416016
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_181.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006205320358276367
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_182.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 1, elapse : 0.006918907165527344
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 1, elapse : 0.06926512718200684
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_183.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006328105926513672
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_184.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00654292106628418
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_185.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005074977874755859
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_186.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005238056182861328
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_187.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0053920745849609375
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_188.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005658149719238281
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_189.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0055828094482421875
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_190.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0066220760345458984
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_191.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00515294075012207
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_192.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004796743392944336
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_193.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005163908004760742
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_194.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006538867950439453
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_195.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005403995513916016
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_196.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005051136016845703
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_197.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005034923553466797
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_198.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0052149295806884766
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_199.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006588935852050781
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_200.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005239009857177734
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_201.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005240201950073242
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_202.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005032062530517578
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.9073486328125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_203.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006536960601806641
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_204.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0053539276123046875
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_205.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004870891571044922
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_206.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008067131042480469
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_207.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006498813629150391
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_208.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005301952362060547
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 2.1457672119140625e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_209.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006963253021240234
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_210.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005887031555175781
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.9073486328125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_211.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006626129150390625
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_212.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006340980529785156
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_213.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 1, elapse : 0.010442018508911133
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 1, elapse : 0.07000494003295898
+[2023/07/04 12:09:46] ppocr INFO: [[[8.0, 0.0], [64.0, 2.0], [61.0, 74.0], [5.0, 72.0]], ('聚', 0.9770848751068115)]
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_214.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006530046463012695
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_215.png**********
+[2023/07/04 12:09:46] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008844137191772461
+[2023/07/04 12:09:46] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:46] ppocr INFO: **********data/0010000000/_216.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00909280776977539
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_217.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006788969039916992
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_218.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007433176040649414
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_219.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007350921630859375
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.9073486328125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_220.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00772404670715332
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 2.1457672119140625e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_221.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 1, elapse : 0.009289979934692383
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 1, elapse : 0.06801509857177734
+[2023/07/04 12:09:47] ppocr INFO: [[[19.0, 18.0], [68.0, 18.0], [68.0, 67.0], [19.0, 67.0]], ('者', 0.5121012926101685)]
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_222.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008336067199707031
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_223.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004940032958984375
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_224.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004788875579833984
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_225.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004580974578857422
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_226.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004559040069580078
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_227.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005178928375244141
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_228.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005091190338134766
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_229.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004892110824584961
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_230.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004546642303466797
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_231.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00500798225402832
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_232.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 1, elapse : 0.005023956298828125
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 1, elapse : 0.06669020652770996
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_233.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0055980682373046875
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_234.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 1, elapse : 0.005352973937988281
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 1, elapse : 0.06736612319946289
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_235.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004642009735107422
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_236.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005115032196044922
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_237.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005173921585083008
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_238.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004547119140625
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_239.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004858970642089844
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_240.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004823923110961914
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_241.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004616737365722656
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_242.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004628896713256836
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_243.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006442070007324219
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_244.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006284952163696289
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_245.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006300926208496094
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_246.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004870891571044922
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_247.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004719972610473633
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_248.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0055389404296875
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.6689300537109375e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_249.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0062351226806640625
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_250.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004683971405029297
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_251.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005255222320556641
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_252.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0047190189361572266
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_253.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0046999454498291016
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_254.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004691123962402344
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_255.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004665851593017578
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_256.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005607128143310547
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_257.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004806995391845703
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_258.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0046520233154296875
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_259.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004741191864013672
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_260.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004644155502319336
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_261.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00464320182800293
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_262.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004558086395263672
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_263.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00557708740234375
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_264.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004700899124145508
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_265.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004574775695800781
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_266.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005022764205932617
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_267.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00464320182800293
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_268.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00468897819519043
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_269.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004786252975463867
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_270.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004837751388549805
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_271.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004595041275024414
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_272.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004769802093505859
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_273.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004724979400634766
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_274.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006312131881713867
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_275.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.006337642669677734
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_276.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004615068435668945
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_277.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004705190658569336
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_278.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004635810852050781
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_279.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.004591226577758789
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_280.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011481046676635742
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 1, elapse : 0.06736373901367188
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_281.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 1, elapse : 0.014183998107910156
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 1, elapse : 0.06740307807922363
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_282.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00878286361694336
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_283.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 1, elapse : 0.009474039077758789
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 1, elapse : 0.06827712059020996
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_284.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007912874221801758
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_285.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 1, elapse : 0.01482391357421875
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 1, elapse : 0.06922006607055664
+[2023/07/04 12:09:47] ppocr INFO: [[[6.0, 11.0], [100.0, 8.0], [108.0, 178.0], [14.0, 181.0]], ('是姐', 0.5945295095443726)]
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_286.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.01270294189453125
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_287.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.016125917434692383
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_288.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00755620002746582
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_289.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.009073972702026367
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_290.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005079030990600586
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_291.png**********
+[2023/07/04 12:09:47] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007539033889770508
+[2023/07/04 12:09:47] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:47] ppocr INFO: **********data/0010000000/_292.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011980056762695312
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 1, elapse : 0.06765413284301758
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_293.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00639796257019043
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_294.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011239051818847656
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 1, elapse : 0.06664800643920898
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_295.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008121967315673828
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_296.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 1, elapse : 0.027357816696166992
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 1, elapse : 0.06707096099853516
+[2023/07/04 12:09:48] ppocr INFO: [[[4.0, 9.0], [122.0, 9.0], [122.0, 278.0], [4.0, 278.0]], ('服技', 0.5248504877090454)]
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_297.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 2, elapse : 0.010076284408569336
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 2, elapse : 0.13525390625
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_298.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008933782577514648
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_299.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00638890266418457
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_300.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.010995864868164062
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_301.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008872747421264648
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_302.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00784921646118164
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_303.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 1, elapse : 0.01156306266784668
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 1, elapse : 0.06739091873168945
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_304.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007472038269042969
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_305.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008951187133789062
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_306.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007654905319213867
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_307.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.010699987411499023
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_308.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.010285139083862305
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_309.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008834123611450195
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_310.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008939981460571289
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_311.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008858919143676758
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_312.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007400035858154297
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_313.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.010396242141723633
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_314.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008971929550170898
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_315.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008869171142578125
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_316.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 1, elapse : 0.013725996017456055
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 1, elapse : 0.06650900840759277
+[2023/07/04 12:09:48] ppocr INFO: [[[6.0, 9.0], [105.0, 9.0], [105.0, 132.0], [6.0, 132.0]], ('蜜', 0.9787567257881165)]
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_317.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011352062225341797
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 1, elapse : 0.06714606285095215
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_318.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008778095245361328
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_319.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008889198303222656
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_320.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.010400056838989258
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_321.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 1, elapse : 0.018169164657592773
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 1, elapse : 0.0671541690826416
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_322.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 0, elapse : 0.009168863296508789
+[2023/07/04 12:09:48] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:48] ppocr INFO: **********data/0010000000/_323.png**********
+[2023/07/04 12:09:48] ppocr DEBUG: dt_boxes num : 1, elapse : 0.01095128059387207
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 1, elapse : 0.06830978393554688
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_324.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 0, elapse : 0.010289192199707031
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_325.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007820844650268555
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_326.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 0, elapse : 0.005311012268066406
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 0, elapse : 2.1457672119140625e-06
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_327.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008181095123291016
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_328.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011349916458129883
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 1, elapse : 0.06659102439880371
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_329.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 1, elapse : 0.013442039489746094
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 1, elapse : 0.06672310829162598
+[2023/07/04 12:09:49] ppocr INFO: [[[9.0, 11.0], [106.0, 11.0], [106.0, 117.0], [9.0, 117.0]], ('烫', 0.5238652229309082)]
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_330.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 1, elapse : 0.014330148696899414
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 1, elapse : 0.0676736831665039
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_331.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 1, elapse : 0.006737947463989258
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 1, elapse : 0.06645607948303223
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_332.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 1, elapse : 0.013833045959472656
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 1, elapse : 0.07053017616271973
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_333.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007853031158447266
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_334.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 1, elapse : 0.01595282554626465
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 1, elapse : 0.07408881187438965
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_335.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 0, elapse : 0.012424945831298828
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 0, elapse : 1.9073486328125e-06
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_336.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011984109878540039
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 1, elapse : 0.06779289245605469
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_337.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007454872131347656
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_338.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 0, elapse : 0.00627589225769043
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_339.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 1, elapse : 0.012594938278198242
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 1, elapse : 0.0669407844543457
+[2023/07/04 12:09:49] ppocr INFO: [[[17.0, 7.0], [127.0, 7.0], [127.0, 89.0], [17.0, 89.0]], ('折', 0.9403393864631653)]
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_340.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 1, elapse : 0.012286901473999023
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 1, elapse : 0.06609892845153809
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_341.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011468172073364258
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 1, elapse : 0.0673227310180664
+[2023/07/04 12:09:49] ppocr INFO: [[[13.0, 16.0], [92.0, 16.0], [92.0, 109.0], [13.0, 109.0]], ('牛', 0.8030654191970825)]
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_342.png**********
+[2023/07/04 12:09:49] ppocr DEBUG: dt_boxes num : 1, elapse : 0.01804804801940918
+[2023/07/04 12:09:49] ppocr DEBUG: rec_res num  : 1, elapse : 0.06929492950439453
+[2023/07/04 12:09:49] ppocr INFO: **********data/0010000000/_343.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011696815490722656
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 1, elapse : 0.06670784950256348
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_344.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008898019790649414
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_345.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 0, elapse : 0.010775089263916016
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_346.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 0, elapse : 0.007441997528076172
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_347.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008971929550170898
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 0, elapse : 7.152557373046875e-07
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_348.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011037826538085938
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 1, elapse : 0.06713080406188965
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_349.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 0, elapse : 0.008962154388427734
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_350.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 1, elapse : 0.010915994644165039
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 1, elapse : 0.06731271743774414
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_351.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 1, elapse : 0.014174222946166992
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 1, elapse : 0.06662988662719727
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_352.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011065959930419922
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 1, elapse : 0.06630873680114746
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_353.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 1, elapse : 0.014146804809570312
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 1, elapse : 0.06633615493774414
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_354.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 1, elapse : 0.00962519645690918
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 1, elapse : 0.06709575653076172
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_355.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 1, elapse : 0.010854244232177734
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 1, elapse : 0.06740474700927734
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_356.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011790037155151367
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 1, elapse : 0.06743407249450684
+[2023/07/04 12:09:50] ppocr INFO: [[[8.0, 6.0], [93.0, 6.0], [93.0, 126.0], [8.0, 126.0]], ('帝', 0.9619870781898499)]
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_357.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 0, elapse : 0.009109973907470703
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_358.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 0, elapse : 0.0063130855560302734
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 0, elapse : 1.1920928955078125e-06
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_359.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011391878128051758
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 1, elapse : 0.06693816184997559
+[2023/07/04 12:09:50] ppocr INFO: [[[10.0, 7.0], [95.0, 7.0], [95.0, 122.0], [10.0, 122.0]], ('寿', 0.6506698131561279)]
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_360.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 0, elapse : 0.009057760238647461
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_361.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 1, elapse : 0.011311054229736328
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 1, elapse : 0.07187795639038086
+[2023/07/04 12:09:50] ppocr INFO: [[[10.0, 10.0], [110.0, 10.0], [110.0, 104.0], [10.0, 104.0]], ('郝', 0.7296541333198547)]
+[2023/07/04 12:09:50] ppocr INFO: **********data/0010000000/_362.png**********
+[2023/07/04 12:09:50] ppocr DEBUG: dt_boxes num : 0, elapse : 0.009695053100585938
+[2023/07/04 12:09:50] ppocr DEBUG: rec_res num  : 0, elapse : 9.5367431640625e-07
