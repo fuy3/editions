@@ -38,7 +38,7 @@ def read_file_lines(file_path):
         return None
 
 # 逐行读取文件内容
-folder_path = "./dataset/1000000000/"
+folder_path = "./1_dataset_lines/10/"
 file_path = folder_path + "det_results.txt"  # 替换为实际的文件路径
 file_lines = read_file_lines(file_path)
 file_name = []
