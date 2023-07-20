@@ -24,7 +24,7 @@ def batch_rename_images(folder_path, new_prefix):
         print(f"Renamed {file_name} to {new_file_name}")
 
 # 指定要重命名的文件夹路径和新的文件名前缀
-folder_path = './10'  # 请替换为你的文件夹路径
+folder_path = './output_chunks2/9'  # 请替换为你的文件夹路径
 new_prefix = ''   # 请替换为你想要的新前缀
 
 # 执行批量重命名操作
