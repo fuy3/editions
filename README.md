@@ -1,1 +1,1 @@
-# cv-project
+# Manuscript-Word-Segementation
