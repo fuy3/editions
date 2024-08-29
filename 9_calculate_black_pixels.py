@@ -48,7 +48,7 @@ def process_images_in_folder(input_folder):
     plt.show()
 
 # 指定输入文件夹路径
-input_folder = '6_output_chunks299/8'  # 请替换为你的文件夹路径
+input_folder = './'  # 请替换为你的文件夹路径
 
 # 处理图像并打印结果和图表
 process_images_in_folder(input_folder)

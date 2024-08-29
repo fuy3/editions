@@ -40,8 +40,8 @@ def binarize_images_in_folder(input_folder, output_folder):
             counter += 1
 
 # 指定输入文件夹路径和输出文件夹路径
-input_folder = '0_dataset_det/10/'
-output_folder = './111'
+input_folder = '111/'
+output_folder = './'
 
 # 调用函数进行二值化处理并保存到新文件夹
 binarize_images_in_folder(input_folder, output_folder)
