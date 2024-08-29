@@ -2,6 +2,11 @@
 
 本repo用于古籍版本鉴定任务扫描书籍预处理，包括`二值化处理`，`副文本页面清除`，`书页边框裁切`以及`图像切块`四大步骤。具体调用方式参照`test.py`
 
+#### STEP 0 - 依赖项按安装
+```
+pip install -r requirements.txt
+```
+
 #### STEP 1 - 原始数据重命名
 将原始数据集存储于本地路径后，调用`books_rename`函数可将指定路径下全部子文件夹下图像重命名为数字编号，以便于后续读取
 ```
@@ -16,7 +21,7 @@ books_rename(input_folder)
 from processing.otsu import images_binarization
 images_binarization(input_folder, binary_folder)
 ```
-![二值化效果展示](data/img/1.png)
+![二值化效果展示](img/1.png)
 <center>Otsu阈值选择及二值化效果展示</center>
 
 #### STEP 3 - 清除副文本
@@ -25,7 +30,7 @@ images_binarization(input_folder, binary_folder)
 from processing.remove_covers import books_remove_covers
 books_remove_covers(input_folder, output_folder)
 ```
-![副文本清除阈值确定](data/img/2.png)
+![副文本清除阈值确定](img/2.png)
 <center>副文本清除阈值确定（正文内容黑色像素占比通常在15%-35%之间）</center>
 
 #### STEP 4 - 书页边框裁切

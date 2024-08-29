@@ -1,47 +1,33 @@
 import cv2
 import os
-import matplotlib.pyplot as plt
+from loguru import logger
 
 def calculate_black_pixels_percentage(binary_image):
+    """统计界面黑色像素占比"""
     total_pixels = binary_image.shape[0] * binary_image.shape[1]
     black_pixels = total_pixels - cv2.countNonZero(binary_image)
     black_pixels_percentage = (black_pixels / total_pixels) * 100
     return black_pixels_percentage
 
-def process_images_in_folder(input_folder, output_folder):
+def chunks_remove_blanks(input_folder, output_folder):
+    """移除空白chunks"""
     for root, _, files in os.walk(input_folder):
         for image_file in files:
             if image_file.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp')):
-                # 构建图像文件的完整路径
                 image_path = os.path.join(root, image_file)
-
-                # 读取图像并转换为灰度图像
                 binary_image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
-                # 计算黑色像素的占比
+
                 black_pixels_percentage = calculate_black_pixels_percentage(binary_image)
 
-                # 判断黑色像素占比是否低于10%
+                # 判断黑色像素占比是否低于8%，跳过不符合条件的图像
                 if black_pixels_percentage < 8.0:
-                    # 不符合要求的图片直接跳过
-                    print(f"Image: {image_file}, Black pixels percentage: {black_pixels_percentage:.2f}% - Image skipped.")
+                    logger.debug(f"Chunk: {image_path} 黑色像素占比: {black_pixels_percentage:.2f}% - 跳过chunk.")
                     continue
 
-                # 打印结果
-                print(f"Image: {image_file}, Black pixels percentage: {black_pixels_percentage:.2f}%")
-
-                # 将结果保存到列表中
                 output_subfolder = os.path.relpath(root, input_folder)
                 output_subfolder_path = os.path.join(output_folder, output_subfolder)
                 os.makedirs(output_subfolder_path, exist_ok=True)
-
                 output_image_path = os.path.join(output_subfolder_path, image_file)
                 cv2.imwrite(output_image_path, cv2.imread(image_path))
-
-# 指定输入文件夹路径
-input_folder = '6_output_chunks299/8'  # 请替换为你的文件夹路径
-output_folder = '7_drop_blank_images299/8'  # 请替换为你想要保存结果的文件夹路径
-
-# 处理图像并打印结果
-process_images_in_folder(input_folder, output_folder)
-
+                logger.debug(f"Chunk: {image_path} 黑色像素占比: {black_pixels_percentage:.2f}%")
