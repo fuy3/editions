@@ -1,6 +1,6 @@
-# Manuscript-Word-Segementation
+# Ancient-book-Edition-Identification
 
-本repo用于古籍版本鉴定任务扫描书籍预处理，包括`二值化处理`，`副文本页面清除`，`书页边框裁切`以及`图像切块`四大步骤。具体调用方式参照`test.py`
+本repo用于古籍版本鉴定任务扫描书籍预处理，包括`二值化处理`，`副文本页面清除`，`书页边框裁切`以及`图像切块`四大步骤 。具体调用方式如下，或参照`test.py`
 
 #### STEP 0 - 依赖项按安装
 ```
@@ -19,7 +19,7 @@ books_rename(input_folder)
 `images_binarization`函数允许将扫描图像统一转换为灰度图像后，使用全局Otsu进行阈值选择并进行二值化的处理，将处理后图像存储在新文件夹下
 ```
 from processing.otsu import images_binarization
-images_binarization(input_folder, binary_folder)
+images_binarization(input_folder, output_folder)
 ```
 ![二值化效果展示](img/1.png)
 <center>Otsu阈值选择及二值化效果展示</center>
