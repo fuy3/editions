@@ -1,54 +1,58 @@
 # Ancient-book-Edition-Identification
 
-本repo用于古籍版本鉴定任务扫描书籍预处理，包括`二值化处理`，`副文本页面清除`，`书页边框裁切`以及`图像切块`四大步骤 。具体调用方式如下，或参照`test.py`
+This repository is used for the preprocessing of scanned pages in ancient book edition identification tasks. It includes four major steps: `binarization`, `removal of auxiliary text pages`, `cropping of page borders`, and `image chunking`. The specific usage is as follows or refer to `test.py`.
 
-#### STEP 0 - 依赖项按安装
+#### STEP 0 - Install Dependencies
 ```
 pip install -r requirements.txt
 ```
 
-#### STEP 1 - 原始数据重命名
-将原始数据集存储于本地路径后，调用`books_rename`函数可将指定路径下全部子文件夹下图像重命名为数字编号，以便于后续读取
+#### STEP 1 - Rename Original Data
+After storing the original dataset locally, you can use the `books_rename` function to rename all images in the subfolders of the specified path with numerical indices for easier subsequent reading.
 ```
 from processing.rename import books_rename
 books_rename(input_folder)
 ```
 
-#### STEP 2 - 图像二值化
-针对古籍受存储环境等影响导致的泛黄、破损、污迹等噪声问题，
-`images_binarization`函数允许将扫描图像统一转换为灰度图像后，使用全局Otsu进行阈值选择并进行二值化的处理，将处理后图像存储在新文件夹下
+#### STEP 2 - Image Binarization
+Due to the impact of storage conditions, ancient books often suffer from yellowing, damage, stains, and other noise issues.  
+The `images_binarization` function converts scanned images to grayscale, applies Otsu’s global threshold selection, and performs binarization. The processed images are then saved in a new folder.
 ```
 from processing.otsu import images_binarization
 images_binarization(input_folder, output_folder)
 ```
-![二值化效果展示](img/1.png)
-<center>Otsu阈值选择及二值化效果展示</center>
+![Binarization Effect](img/1.png)
+<center>Otsu Threshold Selection and Binarization Effect</center>
 
-#### STEP 3 - 清除副文本
-考虑到原始数据集中书页均为整本扫描。封面、前言、序跋等与本次版本鉴定的分类任务无关副文本被包含。因此，`books_remove_covers`函数支持对图像黑色像素占比进行统计，对于小于15%及大于35%（副文本）图像进行过滤，将过滤后图像存储在新文件夹下
+#### STEP 3 - Remove Auxiliary Text
+Since the original dataset contains entire scanned books, non-relevant auxiliary texts such as covers, prefaces, and colophons are included.  
+The `books_remove_covers` function calculates the proportion of black pixels in an image and filters out those with less than 15% or more than 35% black pixels (auxiliary text). The filtered images are saved in a new folder.
 ```
 from processing.remove_covers import books_remove_covers
 books_remove_covers(input_folder, output_folder)
 ```
-![副文本清除阈值确定](img/2.png)
-<center>副文本清除阈值确定（正文内容黑色像素占比通常在15%-35%之间）</center>
+![Auxiliary Text Removal Threshold](img/2.png)
+<center>Threshold Determination for Auxiliary Text Removal (Black pixel ratio in the main text is usually between 15%-35%)</center>
 
-#### STEP 4 - 书页边框裁切
-针对书页中存在的边框在切块后可能包含较少的文字信息，继而影响分类结果的现象，`images_crop_border`支持基于投影法，寻找半页中最长的黑线判定为边框进行裁切，将裁切后图像存储在新文件夹下
+#### STEP 4 - Crop Page Borders
+Since page borders may contain minimal textual information and could affect classification results after chunking,  
+the `images_crop_border` function uses the projection method to detect the longest black line in half a page as the border and crops the image accordingly. The cropped images are saved in a new folder.
 ```
 from processing.remove_bounders import images_crop_border
 images_crop_border(input_folder, output_folder)
 ```
 
-#### STEP 5 - 图像切块
-参照神经网络input size对图像进行裁切，以增加数据量（299效果较好），将切块后图像存储在新文件夹下
+#### STEP 5 - Image Chunking
+To increase the dataset size and optimize it for neural network input size (299 works well for Inception-Resnet Network),  
+the `images_chunking` function slices the images into smaller chunks and saves them in a new folder.
 ```
 from processing.chunking import images_chunking
 images_chunking(input_folder, output_folder, chunk_size)
 ```
 
-#### STEP 6 - 移除空白图块
-对切块后的图像中存在的文字过少的chunks进行过滤，默认阈值为黑色像素占比小于8%为白块，将过滤后图像存储在新文件夹下
+#### STEP 6 - Remove Blank Chunks
+The `chunks_remove_blanks` function filters out chunks with insufficient text content.  
+By default, chunks with a black pixel ratio lower than 8% are considered blank and removed. The filtered images are saved in a new folder.
 ```
 from processing.remove_blanks import chunks_remove_blanks
 chunks_remove_blanks(input_folder, output_folder)
